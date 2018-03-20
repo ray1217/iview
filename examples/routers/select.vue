@@ -674,7 +674,7 @@
         <Select v-model="model1" size="small" style="width:200px;">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
-        <Select v-model="model10" size="small" multiple style="width:260px">
+        <Select v-model="model10" size="small" multiple oneline style="width:260px">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
 
@@ -683,7 +683,7 @@
         <Select v-model="model1" size="large" style="width:200px">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
-        <Select v-model="model10" size="large" multiple style="width:260px">
+        <Select v-model="model10" size="large" multiple oneline style="width:260px">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
 
@@ -695,7 +695,7 @@
         <Select v-model="model11" multiple style="width:260px">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
-        <Select v-model="model10" multiple style="width:260px">
+        <Select v-model="model10" multiple oneline style="width:260px">
             <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
         

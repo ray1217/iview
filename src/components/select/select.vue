@@ -81,6 +81,10 @@
                 type: Boolean,
                 default: false
             },
+            oneline: {
+                type: Boolean,
+                default: false
+            },
             disabled: {
                 type: Boolean,
                 default: false
@@ -189,7 +193,8 @@
             },
             selectionCls () {
                 return {
-                    [`${prefixCls}-selection`]: !this.autoComplete
+                    [`${prefixCls}-selection`]: !this.autoComplete,
+                    [`${prefixCls}-oneline`]: this.oneline
                 };
             },
             showPlaceholder () {
